@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="my.PalindromeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-20T02:39:45" hostname="KAZUAKInoMacBook-Air.local" time="0.033">
+<testsuite name="my.PalindromeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-20T02:45:16" hostname="KAZUAKInoMacBook-Air.local" time="0.05">
   <properties/>
-  <testcase name="test_whenEmptyString_theAccept()" classname="my.PalindromeTest" time="0.033"/>
+  <testcase name="test_whenEmptyString_theAccept()" classname="my.PalindromeTest" time="0.05"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,6 +1,7 @@
 plugins {
     id 'groovy'
     id 'java'
+    id 'idea'
     id 'jacoco'
 }
 
@@ -18,9 +19,20 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }
 
+
 test {
     useJUnitPlatform()
     finalizedBy jacocoTestReport
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.8
+            }
+        }
+    }
 }
 
 jacocoTestReport {
@@ -31,3 +43,4 @@ jacocoTestReport {
         html.destination file("${buildDir}/jacocoHtml")
     }
 }
+
